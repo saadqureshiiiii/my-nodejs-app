@@ -5,7 +5,7 @@ phases:
     runtime-versions:
       nodejs: latest
     commands:
-      - echo "installing something"
+      - echo "Installing something"
 
   pre_build:
     commands:
@@ -15,8 +15,9 @@ phases:
     commands:
       - echo "We are in the build block"
       - echo "We will run some tests"
-      - grep -F "Hello from Elastic Beanstalk!" index.html
+      - grep -F "Congratulations" index.html
 
   post_build:
     commands:
       - echo "We are in the post build phase"
+      - echo "Build completed successfully!"
