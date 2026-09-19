@@ -7,6 +7,7 @@ phases:
     commands:
       - echo "Installing something"
 
+
   pre_build:
     commands:
       - echo "We are in the pre build phase"
